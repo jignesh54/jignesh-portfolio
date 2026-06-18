@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jignesh Patel | Flutter Developer</title>
+<title>Jignesh Patel | Senior Flutter & Android Developer</title>
+<meta name="description" content="Jignesh Patel — Senior Flutter & Android Developer with 3+ years building production mobile apps, accelerated by AI-powered workflows.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -11,189 +16,333 @@
 <body>
 
 <nav class="navbar">
-    <h2>JP</h2>
+    <a href="#top" class="logo" aria-label="Jignesh Patel — home">JP</a>
 
-    <div>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link ripple">About</a>
+        <a href="#skills" class="nav-link ripple">Skills</a>
+        <a href="#experience" class="nav-link ripple">Experience</a>
+        <a href="#projects" class="nav-link ripple">Projects</a>
+        <a href="#contact" class="nav-link ripple">Contact</a>
     </div>
 </nav>
 
-<section class="hero">
+<div class="nav-overlay" id="navOverlay"></div>
 
-    <h1>Jignesh Patel</h1>
+<section class="hero" id="top">
+    <div class="hero-inner">
 
-    <p id="typing"></p>
+        <div class="hero-content">
+            <p class="eyebrow">// main.dart</p>
+            <h1>Jignesh Patel</h1>
 
-    <p>
-        Building scalable mobile applications using Flutter, Kotlin,
-        Firebase and AI-powered development workflows.
-    </p>
+            <p class="role-line">Senior <span id="typing"></span><span class="cursor">&nbsp;</span></p>
 
-    <a href="#projects" class="btn">View Projects</a>
+            <p class="hero-desc">
+                I design and ship production-grade Flutter &amp; Android apps —
+                from architecture to Play Store — accelerated by AI-powered
+                development workflows.
+            </p>
 
-</section>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary ripple">View Projects</a>
+                <a href="#contact" class="btn btn-ghost ripple">Get in Touch</a>
+            </div>
 
-<section id="about" class="fade">
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">4+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">6+</span>
+                    <span class="stat-label">Production Apps</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">12+</span>
+                    <span class="stat-label">Core Skills</span>
+                </div>
+            </div>
+        </div>
 
-    <h2 class="section-title">About Me</h2>
+        <div class="hero-visual" aria-hidden="true">
 
-    <div class="card">
+            <div class="code-panel">
+                <div class="code-panel-head">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-amber"></span>
+                    <span class="dot dot-green"></span>
+                    <p>profile_card.dart</p>
+                </div>
+                <pre class="code-lines"><span class="code-line" style="--d:0"><span class="c-key">class</span> <span class="c-type">ProfileCard</span></span>
+<span class="code-line" style="--d:1">    <span class="c-key">extends</span> <span class="c-type">StatelessWidget</span> {</span>
+<span class="code-line" style="--d:2">  <span class="c-key">@override</span></span>
+<span class="code-line" style="--d:3">  <span class="c-type">Widget</span> build(<span class="c-type">BuildContext</span> c) {</span>
+<span class="code-line" style="--d:4">    <span class="c-key">return</span> <span class="c-type">Card</span>(</span>
+<span class="code-line" style="--d:5">      child: <span class="c-type">ListTile</span>(</span>
+<span class="code-line" style="--d:6">        title: <span class="c-type">Text</span>(<span class="c-str">'Jignesh Patel'</span>),</span>
+<span class="code-line" style="--d:7">        subtitle: <span class="c-type">Text</span>(<span class="c-str">'Flutter Dev'</span>),</span>
+<span class="code-line" style="--d:8">      ),</span>
+<span class="code-line" style="--d:9">    );</span>
+<span class="code-line" style="--d:10">  }</span>
+<span class="code-line" style="--d:11">}</span></pre>
+            </div>
 
-        <p>
-            Android & Flutter Developer with 3.5+ years of experience
-            building scalable, high-performance mobile applications.
+            <div class="phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                    <div class="phone-bar">
+                        <span class="phone-time">9:41</span>
+                        <span class="phone-icons">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M2 12c5-6 15-6 20 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="9" width="18" height="6" rx="1.5"/><rect x="21" y="10.5" width="2" height="3" rx="1"/></svg>
+                        </span>
+                    </div>
+                    <div class="phone-card phone-card-1"></div>
+                    <div class="phone-card phone-card-2"></div>
+                    <div class="phone-card phone-card-3"></div>
+                    <div class="phone-fab">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="phone-nav">
+                        <span class="phone-nav-item active"></span>
+                        <span class="phone-nav-item"></span>
+                        <span class="phone-nav-item"></span>
+                    </div>
+                </div>
+            </div>
 
-            Experienced in Flutter, Kotlin, Firebase, REST APIs,
-            MVVM Architecture, Clean Architecture and Play Store Deployment.
-
-            Currently working at Vedanco Group and previously worked at
-            Hyperlink Infosystem.
-        </p>
+        </div>
 
     </div>
-
 </section>
 
-<section id="skills" class="fade">
+<section id="about" class="section fade">
+    <p class="eyebrow">// about.dart</p>
+    <h2 class="section-title">About</h2>
 
+    <div class="about-grid">
+        <div class="about-text">
+            <p>
+                I'm a Flutter and Android developer with 4+ years of experience
+                designing and shipping scalable, high-performance mobile applications.
+            </p>
+            <p>
+                My day-to-day spans MVVM and Clean Architecture, REST-API-driven
+                features, and Firebase-backed services — taken end-to-end through
+                Play Store release. I currently build at <strong>Vedanco Group</strong>,
+                after two years engineering production apps at
+                <strong>Hyperlink Infosystem</strong>.
+            </p>
+            <p>
+                I pair hands-on engineering with AI-assisted workflows — Claude,
+                Cursor, Copilot — to move faster without cutting corners on
+                architecture or code quality.
+            </p>
+        </div>
+
+        <div class="about-meta">
+            <div class="meta-row">
+                <span class="meta-label">Based in</span>
+                <span>India</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">Focus</span>
+                <span>Flutter · Android · Clean Architecture</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">Currently</span>
+                <span>Vedanco Group</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">Deployed via</span>
+                <span>Play Store</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section fade">
+    <p class="eyebrow">// skills.dart</p>
     <h2 class="section-title">Technical Skills</h2>
 
-    <div class="skills-grid">
-
-        <div class="card">Flutter</div>
-        <div class="card">Dart</div>
-        <div class="card">Kotlin</div>
-        <div class="card">Java</div>
-        <div class="card">Firebase</div>
-        <div class="card">REST APIs</div>
-        <div class="card">GetX</div>
-        <div class="card">Provider</div>
-        <div class="card">BLoC</div>
-        <div class="card">MVVM</div>
-        <div class="card">Clean Architecture</div>
-        <div class="card">Git & GitHub</div>
-
+    <div class="skill-group">
+        <h3 class="skill-group-title">Core</h3>
+        <div class="chip-row">
+            <span class="chip">Flutter</span>
+            <span class="chip">Dart</span>
+            <span class="chip">Kotlin</span>
+            <span class="chip">Java</span>
+        </div>
     </div>
 
+    <div class="skill-group">
+        <h3 class="skill-group-title">Architecture &amp; Patterns</h3>
+        <div class="chip-row">
+            <span class="chip">MVVM</span>
+            <span class="chip">Clean Architecture</span>
+            <span class="chip">BLoC</span>
+            <span class="chip">GetX</span>
+            <span class="chip">Provider</span>
+        </div>
+    </div>
+
+    <div class="skill-group">
+        <h3 class="skill-group-title">Platform &amp; Tools</h3>
+        <div class="chip-row">
+            <span class="chip">Firebase</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">Git &amp; GitHub</span>
+        </div>
+    </div>
 </section>
 
-<section id="experience" class="experience fade">
+<section id="ai-workflow" class="section fade">
+    <p class="eyebrow">// ai_workflow.dart</p>
+    <h2 class="section-title">AI-Augmented Workflow</h2>
+    <p class="section-sub">Tools I use daily to design, generate and ship code faster.</p>
 
+    <div class="marquee">
+        <div class="marquee-track">
+            <span class="chip chip-accent">Claude AI</span>
+            <span class="chip chip-accent">Gemini</span>
+            <span class="chip chip-accent">Cursor AI</span>
+            <span class="chip chip-accent">Codex</span>
+            <span class="chip chip-accent">GitHub Copilot</span>
+            <span class="chip chip-accent">FlutterFlow</span>
+            <span class="chip chip-accent">Claude AI</span>
+            <span class="chip chip-accent">Gemini</span>
+            <span class="chip chip-accent">Cursor AI</span>
+            <span class="chip chip-accent">Codex</span>
+            <span class="chip chip-accent">GitHub Copilot</span>
+            <span class="chip chip-accent">FlutterFlow</span>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="section fade">
+    <p class="eyebrow">// experience.dart</p>
     <h2 class="section-title">Experience</h2>
 
-    <div class="card">
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-head">
+                    <h3>Vedanco Group</h3>
+                    <span class="timeline-date">May 2025 — Present</span>
+                </div>
+                <p class="timeline-role">Android &amp; Flutter Developer</p>
+            </div>
+        </div>
 
-        <h3>Vedanco Group</h3>
-        <p>Android & Flutter Developer</p>
-        <p>May 2025 - Present</p>
-
-        <br>
-
-        <h3>Hyperlink Infosystem</h3>
-        <p>Android & Flutter Developer</p>
-        <p>Jan 2023 - Apr 2025</p>
-
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-head">
+                    <h3>Hyperlink Infosystem</h3>
+                    <span class="timeline-date">Jan 2023 — Apr 2025</span>
+                </div>
+                <p class="timeline-role">Android &amp; Flutter Developer</p>
+            </div>
+        </div>
     </div>
-
 </section>
 
-<section id="projects" class="fade">
-
+<section id="projects" class="section fade">
+    <p class="eyebrow">// projects.dart</p>
     <h2 class="section-title">Featured Projects</h2>
 
     <div class="project-grid">
 
-        <div class="card">
+        <article class="project-card">
+            <div class="project-icon accent-amber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17l5-6 4 3 6-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 6h4v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <span class="project-tag">FinTech</span>
             <h3>Stock Trading App</h3>
-            <p>
-                Real-time stock trading platform with portfolio tracking,
-                IPO investments and secure payment integration.
-            </p>
-        </div>
+            <p>Real-time stock trading platform with portfolio tracking, IPO investments and secure payment integration.</p>
+        </article>
 
-        <div class="card">
+        <article class="project-card">
+            <div class="project-icon accent-mint">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 21V9l8-5 8 5v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-7h6v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <span class="project-tag">PropTech</span>
             <h3>Property Investment Platform</h3>
-            <p>
-                Fractional real-estate investment platform with portfolio
-                management and live investment tracking.
-            </p>
-        </div>
+            <p>Fractional real-estate investment platform with portfolio management and live investment tracking.</p>
+        </article>
 
-        <div class="card">
+        <article class="project-card">
+            <div class="project-icon accent-violet">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 7h4l-2 6a2.5 2.5 0 01-2 0L5 7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M15 7h4l-2 6a2.5 2.5 0 01-2 0l-2-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span class="project-tag">EdTech / Legal</span>
             <h3>Lea Training App</h3>
-            <p>
-                Secure legal education platform with role-based access
-                and offline content support.
-            </p>
-        </div>
+            <p>Secure legal education platform with role-based access and offline content support.</p>
+        </article>
 
-        <div class="card">
+        <article class="project-card">
+            <div class="project-icon accent-amber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="2"/><path d="M7 9h10M7 12.5h10M7 16h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span class="project-tag">News</span>
             <h3>Gujarat Short News</h3>
-            <p>
-                Kotlin-based news application with offline support and
-                in-app messaging.
-            </p>
-        </div>
+            <p>Kotlin-based news application with offline support and in-app messaging.</p>
+        </article>
 
-        <div class="card">
+        <article class="project-card">
+            <div class="project-icon accent-mint">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.2-7-11a4.5 4.5 0 017-3.7A4.5 4.5 0 0119 10c0 5.8-7 11-7 11z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="1.6" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <span class="project-tag">Marketplace</span>
             <h3>ServiceHub</h3>
-            <p>
-                Service booking platform with provider management,
-                GPS discovery and in-app chat.
-            </p>
-        </div>
+            <p>Service booking platform with provider management, GPS discovery and in-app chat.</p>
+        </article>
 
-        <div class="card">
+        <article class="project-card">
+            <div class="project-icon accent-violet">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="7" r="2.3" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="7" r="2.3" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="17" r="2.3" stroke="currentColor" stroke-width="2"/><path d="M7.7 8.6L10.5 15M16.3 8.6L13.5 15M8.3 7h7.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span class="project-tag">Social / Finance</span>
             <h3>FinConnect</h3>
-            <p>
-                Finance-focused social networking application with
-                real-time data feeds and notifications.
-            </p>
+            <p>Finance-focused social networking application with real-time data feeds and notifications.</p>
+        </article>
+
+    </div>
+</section>
+
+<section id="contact" class="section fade">
+    <p class="eyebrow">// contact.dart</p>
+    <h2 class="section-title">Let's Build Something</h2>
+    <p class="section-sub">Open to interesting Flutter &amp; Android projects and conversations.</p>
+
+    <div class="contact-card">
+        <div class="contact-rows">
+            <a class="contact-row ripple" href="mailto:pateljigs3181@gmail.com">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                pateljigs3181@gmail.com
+            </a>
+            <a class="contact-row ripple" href="tel:+918511317222">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2C9.6 21 3 14.4 3 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                +91 85113 17222
+            </a>
         </div>
 
+        <div class="contact-buttons">
+            <a class="btn btn-primary ripple" href="https://www.linkedin.com/in/jignesh-patel-46b0671a2" target="_blank" rel="noopener">LinkedIn Profile</a>
+            <a class="btn btn-ghost ripple" href="https://github.com/jignesh54" target="_blank" rel="noopener">GitHub Profile</a>
+        </div>
     </div>
-
 </section>
 
-<section class="fade">
-
-    <h2 class="section-title">AI Powered Development</h2>
-
-    <div class="skills-grid">
-
-        <div class="card">Claude AI</div>
-        <div class="card">Gemini</div>
-        <div class="card">Cursor AI</div>
-        <div class="card">Codex</div>
-        <div class="card">GitHub Copilot</div>
-        <div class="card">FlutterFlow</div>
-
-    </div>
-
-</section>
-
-<section id="contact" class="contact fade">
-
-    <h2 class="section-title">Contact</h2>
-
-    <p>Email: pateljigs3181@gmail.com</p>
-
-    <p>Phone: +91 85113 17222</p>
-
-    <br>
-
-    <a
-        class="btn"
-        href="https://www.linkedin.com/in/jignesh-patel-46b0671a2"
-        target="_blank">
-        LinkedIn Profile
-    </a>
-
-</section>
+<footer class="footer">
+    <p>© 2026 Jignesh Patel</p>
+</footer>
 
 <script src="script.js"></script>
 
