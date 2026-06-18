@@ -1,0 +1,117 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:#0f172a;
+  color:white;
+  overflow-x:hidden;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+.navbar{
+  position:fixed;
+  width:100%;
+  top:0;
+  padding:20px 10%;
+  background:rgba(15,23,42,.8);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  z-index:1000;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(-45deg,#02569B,#13B9FD,#0f172a,#1e293b);
+  background-size:400% 400%;
+  animation:gradient 12s ease infinite;
+}
+
+@keyframes gradient{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.hero h1{
+  font-size:4rem;
+}
+
+.hero p{
+  font-size:1.3rem;
+  margin-top:15px;
+}
+
+.btn{
+  margin-top:25px;
+  padding:12px 24px;
+  border-radius:30px;
+  background:#13B9FD;
+  color:white;
+  text-decoration:none;
+}
+
+section{
+  padding:100px 10%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+  font-size:2.5rem;
+}
+
+.skills-grid,
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:15px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.experience{
+  background:#111827;
+}
+
+.contact{
+  text-align:center;
+}
+
+.fade{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.fade.show{
+  opacity:1;
+  transform:translateY(0);
+}
