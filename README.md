@@ -1,2 +1,2 @@
 # jignesh-portfolio
-Personal Portfolio Website - Flutter &amp; Android Developer
+Personal Portfolio Website - Android &amp; Flutter Developer
