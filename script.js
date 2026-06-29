@@ -1,5 +1,5 @@
-
 const roles=[
+
 
 "Flutter Developer",
 
@@ -7,57 +7,33 @@ const roles=[
 
 "AI Powered Mobile Engineer"
 
+
 ];
 
 
-let i=0;
+let roleIndex=0;
 
-let j=0;
-
-
-let typing=document.getElementById("typing");
+let charIndex=0;
 
 
-
-function type(){
-
-
-if(j < roles[i].length){
-
-typing.innerHTML += roles[i][j];
-
-j++;
-
-setTimeout(type,100);
-
-
-}
-
-else{
-
-setTimeout(erase,1500);
-
-}
-
-
-}
+const typing=document.getElementById("typing");
 
 
 
-
-function erase(){
-
-
-if(j>0){
+function typeText(){
 
 
-typing.innerHTML =
-roles[i].substring(0,j-1);
+if(charIndex < roles[roleIndex].length){
 
 
-j--;
+typing.textContent += 
+roles[roleIndex].charAt(charIndex);
 
-setTimeout(erase,50);
+
+charIndex++;
+
+
+setTimeout(typeText,100);
 
 
 }
@@ -65,9 +41,7 @@ setTimeout(erase,50);
 else{
 
 
-i=(i+1)%roles.length;
-
-setTimeout(type,500);
+setTimeout(deleteText,1500);
 
 
 }
@@ -77,4 +51,54 @@ setTimeout(type,500);
 
 
 
-window.onload=type;
+
+function deleteText(){
+
+
+if(charIndex > 0){
+
+
+typing.textContent = 
+roles[roleIndex].substring(0,charIndex-1);
+
+
+charIndex--;
+
+
+setTimeout(deleteText,50);
+
+
+
+}
+
+else{
+
+
+roleIndex++;
+
+if(roleIndex >= roles.length){
+
+roleIndex=0;
+
+}
+
+
+setTimeout(typeText,500);
+
+
+}
+
+
+
+}
+
+
+
+
+window.onload=()=>{
+
+
+typeText();
+
+
+};
