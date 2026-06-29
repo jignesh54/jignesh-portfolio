@@ -1,39 +1,34 @@
 const roles=[
 
-
 "Flutter Developer",
 
 "Android Kotlin Developer",
 
 "AI Powered Mobile Engineer"
 
-
 ];
 
 
-let roleIndex=0;
+let a=0;
 
-let charIndex=0;
-
-
-const typing=document.getElementById("typing");
+let b=0;
 
 
-
-function typeText(){
-
-
-if(charIndex < roles[roleIndex].length){
+let text=document.getElementById("typing");
 
 
-typing.textContent += 
-roles[roleIndex].charAt(charIndex);
+
+function write(){
 
 
-charIndex++;
+if(b<roles[a].length){
 
 
-setTimeout(typeText,100);
+text.innerHTML += roles[a][b];
+
+b++;
+
+setTimeout(write,100);
 
 
 }
@@ -41,32 +36,28 @@ setTimeout(typeText,100);
 else{
 
 
-setTimeout(deleteText,1500);
+setTimeout(remove,1500);
 
 
 }
 
-
 }
 
 
 
-
-function deleteText(){
-
-
-if(charIndex > 0){
+function remove(){
 
 
-typing.textContent = 
-roles[roleIndex].substring(0,charIndex-1);
+if(b>0){
 
 
-charIndex--;
+text.innerHTML=
+roles[a].substring(0,b-1);
 
 
-setTimeout(deleteText,50);
+b--;
 
+setTimeout(remove,50);
 
 
 }
@@ -74,31 +65,20 @@ setTimeout(deleteText,50);
 else{
 
 
-roleIndex++;
+a++;
 
-if(roleIndex >= roles.length){
+if(a>=roles.length)
 
-roleIndex=0;
-
-}
+a=0;
 
 
-setTimeout(typeText,500);
+setTimeout(write,500);
 
 
 }
-
-
 
 }
 
 
 
-
-window.onload=()=>{
-
-
-typeText();
-
-
-};
+window.onload=write;
