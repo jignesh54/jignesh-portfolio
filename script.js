@@ -1,36 +1,4 @@
 
-const observer = new IntersectionObserver(
-(entries)=>{
-
-
-entries.forEach(entry=>{
-
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-}
-
-
-});
-
-
-});
-
-
-
-document
-.querySelectorAll(".fade")
-.forEach(
-(el)=>observer.observe(el)
-);
-
-
-
-
-
-
 const roles=[
 
 "Flutter Developer",
@@ -42,26 +10,23 @@ const roles=[
 ];
 
 
+let i=0;
 
-let role=0;
-
-let char=0;
+let j=0;
 
 
-const typing=document.getElementById("typing");
+let typing=document.getElementById("typing");
 
 
 
 function type(){
 
 
-if(char < roles[role].length){
+if(j < roles[i].length){
 
+typing.innerHTML += roles[i][j];
 
-typing.innerHTML += roles[role][char];
-
-char++;
-
+j++;
 
 setTimeout(type,100);
 
@@ -70,9 +35,7 @@ setTimeout(type,100);
 
 else{
 
-
 setTimeout(erase,1500);
-
 
 }
 
@@ -85,15 +48,14 @@ setTimeout(erase,1500);
 function erase(){
 
 
-if(char>0){
+if(j>0){
 
 
 typing.innerHTML =
-roles[role].substring(0,char-1);
+roles[i].substring(0,j-1);
 
 
-char--;
-
+j--;
 
 setTimeout(erase,50);
 
@@ -103,8 +65,7 @@ setTimeout(erase,50);
 else{
 
 
-role=(role+1)%roles.length;
-
+i=(i+1)%roles.length;
 
 setTimeout(type,500);
 
@@ -112,9 +73,7 @@ setTimeout(type,500);
 }
 
 
-
 }
-
 
 
 
