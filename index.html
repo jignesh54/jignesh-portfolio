@@ -1,388 +1,266 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>
-Jignesh Patel | Flutter Developer
-</title>
-
-
+<title>Jignesh Patel | Flutter & Android Developer</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-
 <body>
 
-
 <nav>
-
-<div class="logo">
-JP
-</div>
-
-
-<div>
-
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#ai">AI Tools</a>
-<a href="#contact">Contact</a>
-
-</div>
-
+  <div class="logo">J<span>P</span></div>
+  <div class="nav-links">
+    <a href="#about" class="active">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#ai">AI Tools</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
 </nav>
 
+<!-- ===== HERO / ABOUT TOP ===== -->
+<section class="hero" id="about">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
 
+    <div class="hero-left">
+      <div class="profile-ring">
+        <img src="profile.jpg" alt="Jignesh Patel" onerror="this.src='https://placehold.co/330x330/073b5c/00aaff?text=JP'">
+      </div>
+      <div class="social">
+        <a href="https://linkedin.com/in/jigneshpatel" title="LinkedIn" target="_blank">in</a>
+        <a href="https://github.com/jigneshpatel" title="GitHub" target="_blank">&#x1F419;</a>
+        <a href="mailto:pateljigs3181@gmail.com" title="Email">&#9993;</a>
+        <a href="tel:+918511317222" title="Call">&#128222;</a>
+      </div>
+    </div>
 
+    <div class="hero-right">
+      <span class="badge">&#11088; 3.5+ Years of Experience</span>
+      <h1>Jignesh Patel</h1>
+      <h2><span id="typing"></span><span class="cursor">|</span></h2>
+      <p class="lead">
+        Android &amp; Flutter Developer with 3.5+ years of experience building scalable,
+        high-performance mobile applications using Flutter, Kotlin, Firebase, REST APIs,
+        Clean Architecture and AI-powered development workflows.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn-primary">&#128188; View Projects</a>
+        <a href="Jignesh_Patel_Resume.pdf" class="btn-outline" download>&#11015; Download Resume</a>
+      </div>
+    </div>
+  </div>
 
-<section class="hero">
-
-
-<div class="left">
-
-
-<div class="profile-ring">
-
-<img src="profile.jpg">
-
-</div>
-
-
-
-<div class="social">
-
-<a href="https://linkedin.com">
-LinkedIn
-</a>
-
-<a href="https://github.com">
-GitHub
-</a>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<div class="right">
-
-
-<span class="experience">
-
-⭐ 3.5+ Years Experience
-
-</span>
-
-
-
-<h1>
-
-Jignesh Patel
-
-</h1>
-
-
-
-<h2>
-
-<span id="typing"></span>
-
-</h2>
-
-
-
-
-<p>
-
-
-Android & Flutter Developer with 3.5+ years of experience
-building scalable mobile applications using Flutter,
-Kotlin, Firebase, REST APIs, Clean Architecture
-and AI powered development workflows.
-
-
-</p>
-
-
-
-
-<div class="buttons">
-
-
-<a href="#projects">
-View Projects
-</a>
-
-
-<a href="Jignesh_Patel_Resume.pdf">
-Download Resume
-</a>
-
-
-</div>
-
-
-
-</div>
-
-
-
+  <!-- stats strip -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-icon icon-blue">&lt;/&gt;</div>
+      <div><h3>3.5+</h3><p>Years Experience</p></div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon icon-green">&#128241;</div>
+      <div><h3>6+</h3><p>Projects Delivered</p></div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon icon-purple">&#128293;</div>
+      <div><h3>20%+</h3><p>Faster Delivery with AI</p></div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon icon-orange">&#128640;</div>
+      <div><h3>Production</h3><p>Apps Deployed</p></div>
+    </div>
+  </div>
 </section>
 
+<!-- ===== ABOUT ME ===== -->
+<section class="about-grid">
+  <div class="card about-card">
+    <span class="eyebrow">WHO I AM</span>
+    <h2>About Me</h2>
+    <p>I am an Android &amp; Flutter Developer passionate about building impactful, scalable and user-friendly mobile applications.</p>
+    <p>I have strong hands-on experience in Flutter, Kotlin, Firebase, REST APIs, MVVM, Clean Architecture, State Management and Play Store deployment.</p>
+    <p>I actively leverage AI tools like FlutterFlow, Claude, Antigravity, Codex and more to boost productivity and deliver high-quality solutions faster — reducing delivery time by ~20%.</p>
+  </div>
 
-
-
-
-
-
-
-
-<section id="about">
-
-
-<h2>
-About Me
-</h2>
-
-
-
-<div class="card">
-
-
-<p>
-
-I am an Android & Flutter Developer specializing in
-high performance production applications.
-
-
-<br><br>
-
-
-Experience with Flutter, Kotlin, Firebase,
-MVVM, Clean Architecture, GetX, BLoC,
-REST APIs and Play Store deployment.
-
-
-<br><br>
-
-
-I use AI tools like FlutterFlow, Claude,
-Antigravity, Codex, Cursor AI and Gemini
-to improve development productivity.
-
-
-</p>
-
-
-</div>
-
-
+  <div class="card tech-card" id="skills">
+    <span class="eyebrow center">MY TECH STACK &amp; EXPERTISE</span>
+    <h2 class="center">Tech Stack &amp; Tools</h2>
+    <div class="grid skill-grid">
+      <div class="skill"><div class="skill-icon">&#129514;</div>Flutter</div>
+      <div class="skill"><div class="skill-icon">&#128310;</div>Dart</div>
+      <div class="skill"><div class="skill-icon">&#9883;</div>Kotlin</div>
+      <div class="skill"><div class="skill-icon">&#129302;</div>Android</div>
+      <div class="skill"><div class="skill-icon">&#128293;</div>Firebase</div>
+      <div class="skill"><div class="skill-icon">&#9881;</div>REST API</div>
+      <div class="skill"><div class="skill-icon">&#127959;</div>MVVM / Clean Arch</div>
+      <div class="skill"><div class="skill-icon">&#10070;</div>GetX</div>
+      <div class="skill"><div class="skill-icon">&#11042;</div>BLoC</div>
+      <div class="skill"><div class="skill-icon">&#128203;</div>Provider</div>
+      <div class="skill"><div class="skill-icon">&#128268;</div>Dependency Injection</div>
+      <div class="skill"><div class="skill-icon">&#128187;</div>GitHub / Git</div>
+    </div>
+  </div>
 </section>
 
-
-
-
-
-
-
-
-
-<section id="skills">
-
-
-<h2>
-Tech Stack
-</h2>
-
-
-<div class="grid">
-
-
-<div>Flutter</div>
-<div>Dart</div>
-<div>Kotlin</div>
-<div>Android</div>
-<div>Firebase</div>
-<div>REST API</div>
-<div>MVVM</div>
-<div>GetX</div>
-<div>BLoC</div>
-<div>GitHub</div>
-
-
-</div>
-
-
+<!-- ===== AI POWERED DEV STRIP ===== -->
+<section class="ai-strip" id="ai">
+  <span class="eyebrow center">AI POWERED DEVELOPMENT</span>
+  <div class="ai-row">
+    <div class="ai-pill"><span class="ai-ic c1">&#9889;</span>FlutterFlow</div>
+    <div class="ai-pill"><span class="ai-ic c2">&#10047;</span>Claude</div>
+    <div class="ai-pill"><span class="ai-ic c3">&#9650;</span>Antigravity</div>
+    <div class="ai-pill"><span class="ai-ic c4">&#9899;</span>Codex</div>
+    <div class="ai-pill"><span class="ai-ic c5">&#9670;</span>Cursor AI</div>
+    <div class="ai-pill"><span class="ai-ic c6">&#129302;</span>GitHub Copilot</div>
+    <div class="ai-pill"><span class="ai-ic c7">&#10022;</span>Gemini</div>
+  </div>
 </section>
 
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section-block">
+  <span class="eyebrow center">CAREER JOURNEY</span>
+  <h2 class="center">Professional Experience</h2>
 
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>Android &amp; Flutter Developer</h3>
+          <span class="tl-date">May 2025 – Present</span>
+        </div>
+        <p class="tl-company">Vedanco Group &middot; Ahmedabad, Gujarat</p>
+        <p>Continuing to build and ship Android &amp; Flutter applications, applying AI-assisted development workflows to deliver features faster without compromising code quality.</p>
+      </div>
+    </div>
 
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>Android &amp; Flutter Developer</h3>
+          <span class="tl-date">Jan 2023 – Apr 2025</span>
+        </div>
+        <p class="tl-company">Hyperlink Infosystem &middot; Ahmedabad, Gujarat</p>
+        <ul>
+          <li>Architected and delivered 6+ production mobile apps in Kotlin and Flutter, managing end-to-end lifecycle from design to Play Store release</li>
+          <li>Integrated Firebase services (Authentication, Firestore, FCM push notifications, Analytics) across multiple applications</li>
+          <li>Engineered REST API integrations with real-time data features, improving app responsiveness and scalability</li>
+          <li>Embedded AI tools (Claude, Gemini, Cursor AI, Codex, Antigravity AI) into mobile dev workflows for code generation, debugging and automation — reducing team development time by ~20%</li>
+          <li>Leveraged multi-agent AI workflows for rapid feature development, automated testing assistance and performance tuning</li>
+          <li>Managed full Google Play Store release cycles — versioning, staged rollouts and post-release monitoring</li>
+          <li>Mentored junior developers on best practices for architecture, code quality and debugging</li>
+        </ul>
+      </div>
+    </div>
 
-
-
-
-
-<section id="projects">
-
-
-<h2>
-Projects
-</h2>
-
-
-<div class="grid">
-
-
-<div>
-Stock Trading App
-</div>
-
-
-<div>
-Property Investment Platform
-</div>
-
-
-<div>
-ServiceHub
-</div>
-
-
-<div>
-FinConnect
-</div>
-
-
-</div>
-
-
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>Bachelor of Engineering — Information Technology</h3>
+          <span class="tl-date">2019 – 2023</span>
+        </div>
+        <p class="tl-company">U.V. Patel College of Engineering, Mehsana</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section-block">
+  <span class="eyebrow center">SELECTED WORK</span>
+  <h2 class="center">Key Projects</h2>
 
+  <div class="grid project-grid">
+    <div class="project-card">
+      <div class="project-top"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">GetX</span></div>
+      <h3>Stock Trading App</h3>
+      <p>Full-featured trading platform with stock buying/selling, IPO investments and real-time portfolio tracking.</p>
+      <ul>
+        <li>KYC verification workflow + PCI-compliant payment gateway</li>
+        <li>Real-time price updates &amp; push notifications — boosted engagement by ~35%</li>
+      </ul>
+    </div>
 
+    <div class="project-card">
+      <div class="project-top"><span class="tag">Flutter</span><span class="tag">Firestore</span><span class="tag">REST API</span></div>
+      <h3>Property Investment Platform</h3>
+      <p>Fractional real estate investment app enabling users to invest in properties with secure payment processing.</p>
+      <ul>
+        <li>Portfolio management dashboard with live investment tracking</li>
+        <li>Transaction history &amp; reporting</li>
+      </ul>
+    </div>
 
+    <div class="project-card">
+      <div class="project-top"><span class="tag">Flutter</span><span class="tag">Firebase Auth</span><span class="tag">Firestore</span></div>
+      <h3>Lea Training App</h3>
+      <p>Secure legal education platform with role-based restricted access and content protection.</p>
+      <ul>
+        <li>Offline-capable content delivery for uninterrupted learning</li>
+      </ul>
+    </div>
 
+    <div class="project-card">
+      <div class="project-top"><span class="tag">Kotlin</span><span class="tag">Offline Support</span><span class="tag">In-App Msg</span></div>
+      <h3>Gujarat Short News Platform</h3>
+      <p>Kotlin-based short news app for Gujarat with full offline reading support.</p>
+      <ul>
+        <li>In-app messaging between users and editors</li>
+        <li>Dynamic theme engine — real-time app-wide branding without a release</li>
+      </ul>
+    </div>
 
+    <div class="project-card">
+      <div class="project-top"><span class="tag">Kotlin</span><span class="tag">MVVM</span><span class="tag">Firebase</span></div>
+      <h3>ServiceHub</h3>
+      <p>Service booking platform with real-time provider management and scheduling system.</p>
+      <ul>
+        <li>GPS-based service discovery</li>
+        <li>In-app chat between users and providers</li>
+      </ul>
+    </div>
 
-
-
-<section id="ai">
-
-
-<h2>
-AI Powered Development
-</h2>
-
-
-<div class="grid">
-
-
-<div>
-FlutterFlow
-</div>
-
-<div>
-Claude AI
-</div>
-
-
-<div>
-Antigravity
-</div>
-
-
-<div>
-Codex
-</div>
-
-
-<div>
-Cursor AI
-</div>
-
-
-<div>
-Gemini
-</div>
-
-
-<div>
-GitHub Copilot
-</div>
-
-
-</div>
-
-
+    <div class="project-card">
+      <div class="project-top"><span class="tag">Kotlin</span><span class="tag">REST APIs</span><span class="tag">Firebase</span></div>
+      <h3>FinConnect</h3>
+      <p>Finance-focused social networking platform with real-time API data feeds.</p>
+      <ul>
+        <li>Advanced notification system</li>
+        <li>Dynamic news feed for market updates</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-block">
+  <span class="eyebrow center">GET IN TOUCH</span>
+  <h2 class="center">Contact Me</h2>
 
-
-
-
-
-
-
-<section id="contact">
-
-
-<h2>
-Contact
-</h2>
-
-
-
-<div class="contact-card">
-
-
-<img src="profile.jpg">
-
-
-<h3>
-Jignesh Patel
-</h3>
-
-
-<p>
-📧 pateljigs3181@gmail.com
-</p>
-
-
-<p>
-📱 +91 85113 17222
-</p>
-
-
-<p>
-📍 Ahmedabad, Gujarat
-</p>
-
-
-</div>
-
-
+  <div class="contact-card">
+    <div class="profile-ring small">
+      <img src="profile.jpg" alt="Jignesh Patel" onerror="this.src='https://placehold.co/130x130/073b5c/00aaff?text=JP'">
+    </div>
+    <h3>Jignesh Patel</h3>
+    <p class="role">Flutter Developer &middot; Android Kotlin Developer &middot; AI Powered Mobile Engineer</p>
+    <div class="contact-rows">
+      <a href="mailto:pateljigs3181@gmail.com">&#9993; pateljigs3181@gmail.com</a>
+      <a href="tel:+918511317222">&#128222; +91 85113 17222</a>
+      <span>&#128205; Ahmedabad, Gujarat</span>
+      <a href="https://linkedin.com/in/jigneshpatel" target="_blank">&#128279; LinkedIn</a>
+    </div>
+  </div>
 </section>
 
-
-
+<footer>
+  <p>&copy; 2026 Jignesh Patel. All Rights Reserved.</p>
+</footer>
 
 <script src="script.js"></script>
-
-
 </body>
-
-
 </html>
